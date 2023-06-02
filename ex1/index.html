@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
-    <title>Site ex1 html css</title>
+    <meta name="description" content="Mon permier site exercice">
+    <title>Site exo1 html css</title>
 </head>
 <body>
     <main>
@@ -29,11 +30,17 @@
             </article>
         </section>
         <section id="contact">
-            
+            <h3>contact</h3>
         </section>
         <footer>
             copyright : moi même
         </footer>
     </main>
+    <script>
+        let pres = document.querySelector('#presentation');
+        window.addEventListener('scroll', ()=>{
+            pres.style.backgroundPositionY = window.scrollY / 7 + 'px';
+        })
+    </script>
 </body>
 </html>
