@@ -4,3 +4,49 @@
     padding:0;
     font-family:Helvetica, sans-serif;
 }
+header{
+    position:fixed;
+    height:120px;
+    width:100vw;
+    border-bottom:1px solid lightgray;
+}
+nav{
+    position:fixed;
+    height:40px;
+    width:100%;
+    top:0;
+    left:0;
+    text-align:center;
+    border-bottom:1px solid lightgray;
+}
+nav ul{
+    list-style-type:none;
+    width:100vw;
+    height:40px;
+    display:inline;
+}
+nav ul li{
+    display:inline-block;
+    height:40px;
+    width:100px;
+}
+nav ul li a{
+    display:block;
+    width:100px;
+    height:40px;
+    line-height:40px;
+    text-decoration:none;
+    color:grey;
+    transition:all 0.5s ease-in-out;
+}
+nav ul li a:hover{
+    color:black;
+}
+h1{
+    position:fixed;
+    font-size:50px;
+    font-weight:100;
+    color:rgb(58, 57, 57);
+    top:50px;
+    left:50px;
+}
