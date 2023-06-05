@@ -64,3 +64,11 @@ nav ul li:hover .sub-menu{
     text-align:center;
     border-bottom:1px solid black;
 }
+#acceuil{
+    position:relative;
+    height:100vh;
+    width:100vw;
+    top:120px;
+    left:0;
+    background:black;
+}
