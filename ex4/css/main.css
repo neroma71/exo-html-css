@@ -21,15 +21,16 @@ header{
     width:100vw;
     top:0;
     border-bottom:1px solid grey;
-    background:white;
+    background:black;
     z-index:100;
 }
 h1{
     position:fixed;
+    width:100%;
     top:50px;
-    left:20px;
     color:grey;
     font-size:4em;
+    text-align:center;
 }
 nav{
     position:fixed;
@@ -45,15 +46,15 @@ nav ul{
     justify-content: center;
 }
 nav ul li{
-    width:100px;
+    width:150px;
 }
 nav ul li a{
     display:block;
     height:40px;
-    width:100px;
+    width:150px;
     text-align:center;
     text-decoration:none;
-    color:black;
+    color:white;
     line-height:40px;
 }
 nav ul li a:hover{
@@ -64,14 +65,14 @@ nav ul li a:hover{
 }
 nav ul li:hover .sub-menu{
     display:block;
-    background:white;
+    background:black;
 }
 .sub-menu a{
     display:block;
     height:40px;
-    width:100px;
+    width:150px;
     text-align:center;
-    border-bottom:1px solid black;
+    border-bottom:1px solid white;
 }
 #accueil{
     height:100vh;
@@ -124,11 +125,22 @@ nav ul li:hover .sub-menu{
     font-size:25px;
     margin:10px 0 7px 0;
 }
-.liste ul li a:hover{
-    color:black;
+.liste ul li{
+    height:40px;
+    width:150px;
+    text-align:center;
 }
 .liste ul li a{
+    display:block;
+    height:40px;
+    width:150px;
+    margin-top:5px;
+    line-height:40px;
     color:blueviolet;
+}
+.liste ul li a:hover{
+    color:black;
+    border:1px solid lightgray;
 }
 footer{
     height:120px;
@@ -142,5 +154,5 @@ footer ul{
     margin-top:10px;
 }
 footer ul li{
-    width:100px;
+    width:150px;
 }
