@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Helvetica, sans-serif;
+}
+body{
+    width:100vw;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    overflow-x:hidden;
+}
+main{
+    flex-grow:1;
+}
+header{
+    position:fixed;
+    height:120px;
+    width:100vw;
+    top:0;
+    border-bottom:1px solid grey;
+    background:white;
+    z-index:100;
+}
+h1{
+    position:fixed;
+    top:50px;
+    left:20px;
+    color:grey;
+    font-size:4em;
+}
+nav{
+    position:fixed;
+    width:100vw;
+    top:0;
+    left:0;
+    height:40px;
+    border-bottom:1px solid grey;
+}
+nav ul{
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    width:100px;
+}
+nav ul li a{
+    display:block;
+    height:40px;
+    width:100px;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    line-height:40px;
+}
+nav ul li a:hover{
+    color:blueviolet;
+}
+.sub-menu{
+    display:none;
+}
+nav ul li:hover .sub-menu{
+    display:block;
+    background:white;
+}
+.sub-menu a{
+    display:block;
+    height:40px;
+    width:100px;
+    text-align:center;
+    border-bottom:1px solid black;
+}
+#accueil{
+    height:100vh;
+    width:100vw;
+    margin-top:120px;
+    display:flex;
+    flex-wrap: wrap;
+    padding-bottom:50px;
+}
+.articles{
+    width:50vw;
+    height:50vh;
+}
+.articles p{
+    position:relative;
+    top:70px;
+    width:80%;
+    left:10%;
+    text-decoration:none;
+    color:black;
+    text-align:justify;
+}
+.articles a{
+    text-decoration:none;
+}
+.link1{
+    position:relative;
+    display:block;
+    width:80%;
+    height:200px;
+    left:10%;
+    top:50px;
+    background:url(../images/fusee.jpg)top center fixed no-repeat;
+    background-size:cover;
+}
+.link1:hover{
+    background:url(../images/fusee2.jpg)top center fixed no-repeat;
+    background-size:cover;
+}
+.liste{
+    position:relative;
+    top:50px;
+    left:50px;
+}
+.liste ul{
+    list-style-type: none;
+}
+.liste ul li:nth-child(4n +1){
+    font-size:25px;
+    margin:10px 0 7px 0;
+}
+.liste ul li a:hover{
+    color:black;
+}
+footer{
+    height:120px;
+    background:lightgray;
+}
+footer ul{
+    display:flex;
+    justify-content:center;
+    list-style-type:none;
+    height:40px;
+    margin-top:10px;
+}
+footer ul li{
+    width:100px;
+}
