@@ -24,6 +24,7 @@ header{
     border-bottom:1px solid grey;
     background:black;
     z-index:100;
+    animation:animehead 2s forwards;
 }
 h1{
     position:fixed;

@@ -24,6 +24,8 @@ header{
     border-bottom:1px solid grey;
     background:black;
     z-index:100;
+    opacity:0;
+    animation:anime 2s forwards;
 }
 h1{
     position:fixed;
@@ -57,9 +59,11 @@ nav ul li a{
     text-decoration:none;
     color:white;
     line-height:40px;
+    transition: all 0.3s ease-in-out;
 }
 nav ul li a:hover{
     color:blueviolet;
+    background:white;
 }
 .sub-menu{
     display:none;
@@ -83,8 +87,19 @@ nav ul li:hover .sub-menu{
     flex-wrap:wrap;
 }
 .articles{
+    position:relative;
     width:50vw;
     height:50vh;
+    left:-50vw;
+    animation:fromleft 1s ease forwards;
+}
+@keyframes fromleft{
+    from{
+        left:-50vw;
+    }
+    to{
+        left:0vw;
+    }
 }
 .articles p{
     position:relative;
@@ -147,6 +162,8 @@ footer{
     height:100px;
     bottom:0;
     background:black;
+    opacity:0;
+    animation:anime 2s forwards;
 }
 footer ul{
     position:relative;
@@ -160,3 +177,12 @@ footer ul li{
     width:150px;
     color:white;
 }
+@keyframes anime{
+    from{
+      opacity:0;
+    }
+  
+    to{
+      opacity:1;
+    }
+  }
