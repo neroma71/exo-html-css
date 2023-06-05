@@ -125,9 +125,12 @@ nav ul li:hover .sub-menu{
 .liste ul li a:hover{
     color:black;
 }
+.liste ul li a:link{
+    color:blueviolet;
+}
 footer{
     height:120px;
-    background:lightgray;
+    border-top:1px solid grey;
 }
 footer ul{
     display:flex;
