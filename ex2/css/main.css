@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:Helvetica, sans-serif;
 }
 body{
     height:100vh;
@@ -14,10 +15,52 @@ header{
     border-bottom:1px solid grey;
     background:white;
 }
+h1{
+    position:fixed;
+    top:50px;
+    left:20px;
+    color:grey;
+    font-size:4em;
+}
 nav{
     position:fixed;
     width:100vw;
     top:0;
     left:0;
     height:40px;
+    border-bottom:1px solid grey;
+}
+nav ul{
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    width:100px;
+}
+nav ul li a{
+    display:block;
+    height:40px;
+    width:100px;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    line-height:40px;
+}
+nav ul li a:hover{
+    color:blueviolet;
+}
+.sub-menu{
+    display:none;
+}
+nav ul li:hover .sub-menu{
+    display:block;
+    background:white;
+}
+.sub-menu a{
+    display:block;
+    height:40px;
+    width:100px;
+    text-align:center;
+    border-bottom:1px solid black;
 }
