@@ -128,15 +128,27 @@ nav ul li:hover .sub-menu{
     background:url(../images/fusee2.jpg)top center fixed no-repeat;
     background-size:cover;
 }
-.btn{
+#btn{
     position:relative;
-   
+    width:150px;
     height:40px;
+    margin-top:20px;
+    left:50%;
+    transform:translateX(-50%);
     line-height:40px;
     text-align:center;
     border:1px solid blueviolet;
     border-radius:10px;
 }
+#btn:hover{
+    animation: bounce 1s forwards;
+}
+@keyframes bounce{
+     0%{transform:translateX(-47%);}
+    33%{transform: translateX(-53%);}
+    66%{transform:translateX(-47%);}
+    99%{transform:translateX(-50%);}
+    }
 .liste{
     position:absolute;
     top:50px;
