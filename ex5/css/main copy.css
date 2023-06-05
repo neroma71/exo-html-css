@@ -128,10 +128,28 @@ nav ul li:hover .sub-menu{
     background:url(../images/fusee2.jpg)top center fixed no-repeat;
     background-size:cover;
 }
-.liste{
+.btn{
     position:relative;
+   
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    border:1px solid blueviolet;
+    border-radius:10px;
+}
+.liste{
+    position:absolute;
     top:50px;
-    left:50px;
+    left:300%;
+    animation:fromright 1s ease forwards; 
+}
+@keyframes fromright{
+    from{
+        left:300%;
+    }
+    to{
+        left:50px;
+    }
 }
 .liste ul{
     list-style-type: none;
