@@ -12,7 +12,9 @@ html, body{
     overflow-x:hidden;
 }
 main{
-    flex-grow:1;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
 }
 header{
     position:fixed;
@@ -87,7 +89,7 @@ nav ul li:hover .sub-menu{
 }
 .articles p{
     position:relative;
-    top:70px;
+    top:90px;
     width:80%;
     left:10%;
     font-size:14px;
@@ -104,7 +106,7 @@ nav ul li:hover .sub-menu{
     width:80%;
     height:200px;
     left:10%;
-    top:50px;
+    top:80px;
     background:url(../images/fusee.jpg)top center fixed no-repeat;
     background-size:cover;
 }
@@ -143,15 +145,17 @@ nav ul li:hover .sub-menu{
 }
 footer{
     height:120px;
-    background:lightgray;
+    background:black;
 }
 footer ul{
+    position:relative;
     display:flex;
     justify-content:center;
     list-style-type:none;
     height:40px;
-    margin-top:10px;
+    top:20px;
 }
 footer ul li{
     width:150px;
+    color:white;
 }
