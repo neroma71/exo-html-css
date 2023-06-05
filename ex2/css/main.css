@@ -10,6 +10,7 @@ body{
     overflow-x:hidden;
 }
 main{
+    min-height:100vh;
     display:flex;
     flex-direction: column;
 }
@@ -127,4 +128,14 @@ nav ul li:hover .sub-menu{
 footer{
     height:120px;
     background:lightgray;
+}
+footer ul{
+    display:flex;
+    justify-content:center;
+    list-style-type:none;
+    height:40px;
+    margin-top:10px;
+}
+footer ul li{
+    width:100px;
 }
