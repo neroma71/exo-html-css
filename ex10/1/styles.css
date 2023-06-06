@@ -1,6 +1,6 @@
 /* ====================================
-   CSS setup – ne rien modifier
-   éditer plus bas
+   CSS setup ï¿½ï¿½ne rien modifier
+   ï¿½diter plus bas
  * ==================================== */
 
 body { margin: 0; padding: 0; border: 0; }
@@ -14,6 +14,9 @@ div:nth-of-type(5n) { background-color: #e74c3c; }
 span { background-color: rgba(255, 255, 255, .5); border-radius: 50%; display: block; font-size: 48px; height: auto; line-height: 3em; text-align: center; width: 3em; }
 
 /* ====================================
-   éditer à partir d'ici
+   ï¿½diter ï¿½ partir d'ici
  * ==================================== */
- 
+ section{
+  display:flex;
+  justify-content:center;
+ }
