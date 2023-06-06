@@ -121,11 +121,11 @@ nav ul li:hover .sub-menu{
     height:200px;
     left:10%;
     top:80px;
-    background:url(../images/fusee.jpg)top center fixed no-repeat;
+    background:url(../images/fusee.jpg)center fixed no-repeat;
     background-size:cover;
 }
 .link1:hover{
-    background:url(../images/fusee2.jpg)top center fixed no-repeat;
+    background:url(../images/fusee2.jpg)center fixed no-repeat;
     background-size:cover;
 }
 #btn{
@@ -216,10 +216,25 @@ footer ul li{
       opacity:1;
     }
   }
-  @media screen and(max-width 768px){
-    {
-       #presentation{
-        flex-direction:column;
-       }
+  @media only screen and (max-width: 769px) {
+    h1{
+        font-size:30px;
+        top:70px;
     }
+    #presentation{
+        display:flex;
+        flex-direction: column;
+    }
+       .articles{
+        width:100vw;
+       }
+       @keyframes fromright{
+        from{
+            left:300%;
+        }
+        to{
+            left:calc(50% - 75px);
+        }
+    }
+    
   }
