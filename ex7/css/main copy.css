@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    width:100vw;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+main{
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+header{
+    position:fixed;
+    height:120px;
+    width:100vw;
+    top:0;
+    border-bottom:1px solid grey;
+    background:black;
+    z-index:100;
+    opacity:0;
+    animation:anime 2s forwards;
+}
+h1{
+    position:fixed;
+    top:50px;
+    left:50px;
+    color:white;
+    font-size:4em;
+    text-align:center;
+}
+nav{
+    position:fixed;
+    width:100vw;
+    top:0;
+    left:0;
+    height:40px;
+    border-bottom:1px solid grey;
+}
+nav ul{
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    width:150px;
+}
+nav ul li a{
+    display:block;
+    height:40px;
+    width:150px;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    line-height:40px;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover{
+    color:blueviolet;
+    background:white;
+}
+.sub-menu{
+    display:none;
+}
+nav ul li:hover .sub-menu{
+    display:block;
+    background:black;
+}
+.sub-menu a{
+    display:block;
+    height:40px;
+    width:150px;
+    text-align:center;
+    border-bottom:1px solid white;
+}
+#accueil{
+    height:100vh;
+    width:100vw;
+    margin-top:120px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.articles{
+    position:relative;
+    width:50vw;
+    height:50vh;
+    left:-50vw;
+    animation:fromleft 1s ease forwards;
+}
+@keyframes fromleft{
+    from{
+        left:-50vw;
+    }
+    to{
+        left:0vw;
+    }
+}
+.articles p{
+    position:relative;
+    top:90px;
+    width:80%;
+    left:10%;
+    font-size:14px;
+    text-decoration:none;
+    color:black;
+    text-align:justify;
+}
+.articles a{
+    text-decoration:none;
+}
+.link1{
+    position:relative;
+    display:block;
+    width:80%;
+    height:200px;
+    left:10%;
+    top:80px;
+    background:url(../images/fusee.jpg)center fixed no-repeat;
+    background-size:cover;
+}
+.link1:hover{
+    background:url(../images/fusee2.jpg)center fixed no-repeat;
+    background-size:cover;
+}
+#btn{
+    position:relative;
+    width:150px;
+    height:40px;
+    margin-top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    line-height:40px;
+    text-align:center;
+    border:1px solid blueviolet;
+    border-radius:10px;
+}
+#btn:hover{
+    animation: bounce 1s forwards;
+}
+@keyframes bounce{
+     0%{transform:translateX(-47%);}
+    33%{transform: translateX(-53%);}
+    66%{transform:translateX(-47%);}
+    99%{transform:translateX(-50%);}
+    }
+.liste{
+    position:absolute;
+    top:50px;
+    left:300%;
+    animation:fromright 1s ease forwards; 
+}
+@keyframes fromright{
+    from{
+        left:300%;
+    }
+    to{
+        left:50px;
+    }
+}
+.liste ul{
+    list-style-type: none;
+}
+.liste ul li:nth-child(4n +1){
+    font-size:25px;
+    margin:10px 0 7px 0;
+}
+.liste ul li{
+    height:40px;
+    width:150px;
+    text-align:center;
+}
+.liste ul li a{
+    display:block;
+    height:40px;
+    width:150px;
+    margin-top:5px;
+    line-height:40px;
+    color:blueviolet;
+}
+.liste ul li a:hover{
+    color:black;
+    border:1px solid lightgray;
+}
+footer{
+    position:relative;
+    height:100px;
+    bottom:0;
+    background:black;
+    opacity:0;
+    animation:anime 2s forwards;
+}
+footer ul{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    list-style-type:none;
+    height:40px;
+    top:20px;
+}
+footer ul li{
+    width:150px;
+    color:white;
+}
+@keyframes anime{
+    from{
+      opacity:0;
+    }
+  
+    to{
+      opacity:1;
+    }
+  }
+  @media only screen and (max-width: 769px) {
+    h1{
+        font-size:30px;
+        top:70px;
+    }
+    #presentation{
+        display:flex;
+        flex-direction: column;
+    }
+       .articles{
+        width:100vw;
+       }
+       @keyframes fromright{
+        from{
+            left:300%;
+        }
+        to{
+            left:calc(50% - 75px);
+        }
+    }
+    
+  }
