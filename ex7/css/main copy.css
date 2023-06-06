@@ -27,6 +27,9 @@ header{
     opacity:0;
     animation:anime 2s forwards;
 }
+#hamburger{
+    display:none;
+}
 h1{
     position:fixed;
     top:50px;
@@ -237,4 +240,20 @@ footer ul li{
         }
     }
     
+  }
+  @media only screen and (max-width: 630px) {
+        nav{
+            display:none;
+        }
+        #hamburger{
+            position:fixed;
+            top:0;
+            left:0;
+            display:block;
+            height:50px;
+            width:50px;
+            background:white url(../images/menu.png)center;
+            background-size:cover;
+        }
+
   }
