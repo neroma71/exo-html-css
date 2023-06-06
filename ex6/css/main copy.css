@@ -216,3 +216,10 @@ footer ul li{
       opacity:1;
     }
   }
+  @media screen and(max-width 768px){
+    {
+       #presentation{
+        flex-direction:column;
+       }
+    }
+  }
