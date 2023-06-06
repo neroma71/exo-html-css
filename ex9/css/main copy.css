@@ -8,13 +8,14 @@
 
 html, body{
     width:100vw;
-    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    min-height:100%;
     overflow-x:hidden;
 }
 main{
     min-height:100vh;
-    display:flex;
-    flex-direction: column;
+    flex-grow:1;
 }
 header{
     position:fixed;
@@ -49,7 +50,7 @@ nav{
 nav ul{
     list-style-type:none;
     display:flex;
-    justify-content: center;
+    justify-content: right;
 }
 nav ul li{
     width:150px;
@@ -83,7 +84,7 @@ nav ul li:hover .sub-menu{
     border-bottom:1px solid white;
 }
 #accueil{
-    height:100vh;
+    min-height:100vh;
     width:100vw;
     margin-top:120px;
     display:flex;
@@ -115,6 +116,7 @@ nav ul li:hover .sub-menu{
     text-align:justify;
 }
 .articles a{
+    display:block;
     text-decoration:none;
 }
 .link1{
@@ -130,6 +132,24 @@ nav ul li:hover .sub-menu{
 .link1:hover{
     background:url(../images/fusee2.jpg)center fixed no-repeat;
     background-size:cover;
+}
+.linkscience{
+    position:relative;
+    display:block;
+    width:80%;
+    height:200px;
+    left:10%;
+    top:50px;
+    margin-bottom:45px;
+    background:url(../images/fusee.jpg)center fixed no-repeat;
+    background-size:cover;
+}
+.articlescience{
+    position:relative;
+    width:80%;
+    left:10%;
+    top:10px;
+    text-align:justify;
 }
 #btn{
     position:relative;
@@ -153,7 +173,7 @@ nav ul li:hover .sub-menu{
     99%{transform:translateX(-50%);}
     }
 .liste{
-    position:absolute;
+    position:relative;
     top:50px;
     left:300%;
     animation:fromright 1s ease forwards; 
@@ -209,6 +229,7 @@ footer ul{
 footer ul li{
     width:150px;
     color:white;
+    text-align:center;
 }
 @keyframes anime{
     from{
@@ -219,18 +240,23 @@ footer ul li{
       opacity:1;
     }
   }
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 768px) {
     h1{
         font-size:30px;
         top:70px;
     }
-    #presentation{
-        display:flex;
-        flex-direction: column;
+    #accueil{
+        position:relative;
+        margin-top:0;
     }
-       .articles{
+    .liste{
+        width:151px;
+        top:120px;
+    }
+    .articles{
+        height:50vh;
         width:100vw;
-       }
+}
        @keyframes fromright{
         from{
             left:300%;
@@ -239,7 +265,9 @@ footer ul li{
             left:calc(50% - 75px);
         }
     }
-    
+    footer{
+        margin-top:150px;
+    }
   }
   @media only screen and (max-width: 630px) {
         nav{
@@ -255,6 +283,9 @@ footer ul li{
             border-radius:5px;
             background:white url(../images/menu.png)center;
             background-size:cover;
+        }
+        .articles p{
+            font-size:12px;
         }
 
   }
