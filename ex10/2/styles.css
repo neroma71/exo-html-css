@@ -40,3 +40,16 @@ div:nth-of-type(5n){
     flex:1024px;;
   }
 }
+@media screen and (max-width: 600px){
+  section{
+    flex-direction:column;
+    justify-content:center;
+  }
+  div{
+    width:500px;
+  }
+  div:nth-of-type(5n){
+    width:500px;
+  }
+
+}
